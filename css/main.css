@@ -40,4 +40,40 @@
 .jumbotron {
     margin-top: 20px;
     background-color:transparent;
+    padding-right:10px;
+}
+hr {
+    position: relative;
+    height: 6px;
+    border:0;
+}
+hr:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    background: red;
+    transition: all 1s;
+    width: 0;
+}
+hr:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    background: red;
+    transition: all 1s;
+    width: 0;
+}
+hr:hover:before {
+    background: blue;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
