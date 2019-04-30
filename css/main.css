@@ -44,7 +44,7 @@
 }
 hr {
     position: relative;
-    height: 6px;
+    height: 5px;
     border:0;
 }
 hr:before {
@@ -56,19 +56,7 @@ hr:before {
     right: 50%;
     height: 3px;
     background: red;
-    transition: all 1s;
-    width: 0;
-}
-hr:before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    right: 50%;
-    height: 3px;
-    background: red;
-    transition: all 1s;
+    transition: all .5s;
     width: 0;
 }
 hr:hover:before {
