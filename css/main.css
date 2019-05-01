@@ -125,3 +125,49 @@ hr:hover:before {
 .server{
     margin:0 0 0 240px;
 }
+.clientbtn {
+    text-decoration: none;
+    outline: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-color:white;
+    border-image-slice: 1;
+    margin: 10px 20px;
+    font-size:1.6rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165,.84,.44,1);
+    background-color:transparent;
+    margin-left:100px;
+    width:250px;
+    padding-left:55px;
+}
+
+.clientbtn:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        color: white;
+        background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+        transition: .8s cubic-bezier(.165,.84,.44,1);
+    }
+
+.clientbtn:hover {
+    color:white;
+    text-decoration:none;
+    background: rgba(255,255,255,0);
+}
+
+.clientbtn:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+    }
