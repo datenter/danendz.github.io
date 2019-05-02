@@ -135,9 +135,7 @@ hr:hover:before {
 .modpack {
     margin: 0 0 100px 500px;
 }
-.server{
-    margin:0 0 0 240px;
-}
+
 .clientbtn {
     text-decoration: none;
     outline: none;
@@ -156,9 +154,10 @@ hr:hover:before {
     transition: .8s cubic-bezier(.165,.84,.44,1);
     background-color:transparent;
     margin-left:100px;
-    width:250px;
+    width:200px;
     padding-left:55px;
     border-radius:20px;
+    right: 100px;
 }
 
     .clientbtn:before {
@@ -188,6 +187,61 @@ hr:hover:before {
 }
 
 .clientbtn:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+    }
+    .clientbtn1 {
+        text-decoration: none;
+        outline: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        padding: 15px 30px;
+        border: 1px solid;
+        border-color:white;
+        border-image-slice: 1;
+        margin: 10px 20px;
+        font-size:1.6rem;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: 2px;
+        transition: .8s cubic-bezier(.165,.84,.44,1);
+        background-color:transparent;
+        margin-left:100px;
+        width:200px;
+        padding-left:55px;
+        border-radius:20px;
+        left: 130px;
+        bottom: 78px;
+    }
+    .clientbtn1:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        color: white;
+        /* IE9, iOS 3.2+ */
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZmYwMDAwIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmIzMDMiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(255, 0, 0)),color-stop(1, rgb(255, 179, 3)));
+        /* Android 2.3 */
+        background-image: -webkit-repeating-linear-gradient(top,rgb(255, 0, 0) 0%,rgb(255, 179, 3) 100%);
+        /* IE10+ */
+        background-image: repeating-linear-gradient(to bottom,rgb(255, 0, 0) 0%,rgb(255, 179, 3) 100%);
+        background-image: -ms-repeating-linear-gradient(top,rgb(255, 0, 0) 0%,rgb(255, 179, 3) 100%);
+        transition: .8s cubic-bezier(.165,.84,.44,1);
+    }
+
+.clientbtn1:hover {
+    color:white;
+    text-decoration:none;
+    background: rgba(255,255,255,0);
+}
+
+.clientbtn1:hover:before {
         bottom: 0%;
         top: auto;
         height: 100%;
