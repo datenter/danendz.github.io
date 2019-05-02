@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <!--Навигационная панель-->
-
         <div class="shadow p-3">
+
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Форум</a>
@@ -40,29 +40,25 @@
             <p class="display-4">Как начать играть?</p>
         </div>
         <div class="client">
-          <div class="clienttext">
-
-
             <h1 class="display-4">1.Игра</h1>
             <p class="lead">Та самая игра про которую мы говорили выше</p>
-            </div>
             <hr class="my-4">
-            <div class="icodiskcon box">
-              <img src="ico/yandex-disk.png" alt="yandex disk" class="icodisk">
+            <div class="icodiskcon">
+              <img src="ico/yandex-disk.png" alt="yandex disk" class="img-fluid icodisk">
             </div>
-            <div class="icotorrentcon box">
-              <img src="ico/utorrent.png" alt="Torrent" class="icotorrent">
+            <div class="icotorrentcon box box">
+              <img src="ico/utorrent.png" alt="Torrent" class="img-fluid icotorrent">
             </div>
-            <a class="clientbtn box box1" href="https://yadi.sk/d/JYm485WW3GgDR3" role="button" title="Скачать игру через Яндекс диск">Я.Диск</a>
+            <a class="clientbtn box box1" target="_blank" href="https://yadi.sk/d/JYm485WW3GgDR3" role="button" title="Скачать игру через Яндекс диск">Я.Диск</a>
             <div class="bg"></div>
-            <a class="clientbtn1 box box2" href="https://cr-mp.ru/download/gtacriminalrussia2010_torrent.torrent" role="button" title="Скачать игру через Торрент" >Торрент</a>
+            <a class="clientbtn1 box box2" target="_blank" href="https://cr-mp.ru/download/gtacriminalrussia2010_torrent.torrent" role="button" title="Скачать игру через Яндекс диск">Торрент</a>
             <div class="bg1"></div>
         </div>
         <div class="crmp">
             <h1 class="display-4">2.CRMP</h1>
             <p class="lead">Мультиплеер для игры вместе с друзьями и другими игроками!</p>
             <hr class="my-4">
-            <button type="button" class="btn btn-primary" title="Скачать Мультиплеер через Яндекс диск">Я.Диск</button>
+            <a class="crmpbtn crmpbtn1" target="_blank" href="https://cr-mp.ru/download/multiplayer-cr-g-install.exe" title="Скачать Мультиплеер">Скачать</a>
         </div>
         <div class="modpack">
             <h1 class="display-4">3.Модпак</h1>
@@ -76,7 +72,12 @@
                 <li class="list-group-item">И много чего другого!</li>
             </ul>
             <hr class="my-4">
-            <button type="button" class="btn btn-primary">Главный</button>
+            <form action="https://yadi.sk/d/X_oBjOUmcRVNdg" target="_blank">
+              <button class="btnmod btnmod1">Скачать с Я.Диска</button>
+              <form action="https://drive.google.com/open?id=19o-x1CcQjOYPrwdd3o-sIhdhWzwak6qY" target="_blank">
+              <button class="btnmod btnmod2">Скачать с Гугл Диска</button>
+            </form>
+          </form>
         </div>
         <div class="server">
             <h1 class="display-4">4.Подключение на сервер</h1>
