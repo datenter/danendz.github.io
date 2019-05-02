@@ -282,7 +282,7 @@ hr:hover:before {
     }
     .client .bg{
       position: absolute;
-      top:650px;
+      top:595px;
       left: 0;
       z-index: 1;
       opacity: 0;
@@ -312,7 +312,7 @@ hr:hover:before {
     }
     .client .bg1{
       position: absolute;
-      top:650px;
+      top:595px;
       left: 0;
       z-index: 1;
       opacity: 0;
