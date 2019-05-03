@@ -1,5 +1,6 @@
-﻿body {
+﻿html, body {
     font: 16px/20px 'Stolzl-Medium', sans-serif;
+    min-width: 320px;
 }
 .shadow{
     position: fixed;
@@ -420,21 +421,24 @@ hr:hover:before {
 .list-group-item{
   background-color: #ecf0f1;
 }
-@media (max-width: 576px) {
+@media (min-width: 576px){
   .shadow{
-    left: 0;
-    width: 100%;
+    left: 70px;
+    width: 80%;
   }
   .faq{
     margin-left: 30px;
     margin-top: 0;
+  }
+  .nav{
+    margin-right: 25px;
   }
   .client{
     margin-top:0;
     margin-left: 30px;
   }
   .icotorrentcon{
-    right: 250px;
+    right: 200px;
   }
   .modpack{
     margin-left: 30px;
@@ -447,4 +451,68 @@ hr:hover:before {
     margin-top:0;
     margin-left: 30px;
   }
+ }
+
+ @media (min-width: 768px){
+   .shadow{
+     left: 150px;
+     width: 60%;
+   }
+   .faq{
+     margin-left: 0;
+     margin-top: 0;
+   }
+   .nav{
+     margin-right: 50px;
+   }
+   .client{
+     margin-top:0;
+     margin-left: 30px;
+   }
+   .icotorrentcon{
+     right: 380px;
+   }
+   .modpack{
+     margin-left: 30px;
+     margin-top:0px;
+   }
+   .server{
+     margin-left:30px;
+   }
+   .crmp{
+     margin-top:0;
+     margin-left: 30px;
+   }
+   .jumbotron{
+     margin-left: 0;
+   }
+ }
+
+ @media (min-width: 992px){
+   .shadow{
+     left:160px;
+     width: 50%;
+   }
+   .faq{
+     margin-left: 0px;
+     margin-top: 0;
+   }
+   .client{
+     margin-top:0;
+     margin-left: 30px;
+   }
+   .nav{
+     margin-right: 25px;
+   }
+   .clientbtn1{
+     left:0px;
+     bottom: 0;
+    }
+   .modpack{
+     margin-left: 30px;
+     margin-top:0px;
+   }
+   .icotorrentcon{
+     right: 430px;
+   }
  }
