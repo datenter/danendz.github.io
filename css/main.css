@@ -1,14 +1,6 @@
 ﻿body {
     font: 16px/20px 'Stolzl-Medium', sans-serif;
 }
-.logo{
-  position: relative;
-  width: 180px;
-  height: 160px;
-  right: 800px;
-  bottom: 50px;
-}
-
 .shadow{
     position: fixed;
     top: 0;
@@ -428,3 +420,26 @@ hr:hover:before {
 .list-group-item{
   background-color: #ecf0f1;
 }
+@media (max-width: 576px) {
+  .shadow{
+    left: 0;
+    width: 100%;
+  }
+  .faq{
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  .client{
+    margin: 0;
+  }
+  .icotorrentcon{
+    right: 250px;
+  }
+  .modpack{
+    margin-left: 30px;
+    margin-top:0px;
+  }
+  .server{
+    padding-left:30px;
+  }
+ }
