@@ -1,4 +1,5 @@
-function smothScroll(target,duration){
+//Скрипт на плавный скролл
+  function smothScroll(target,duration){
   var target = document.querySelector(target);
   var targetPosition = target.getBoundingClientRect().top;
   var startPosition = window.pageYOffset;
