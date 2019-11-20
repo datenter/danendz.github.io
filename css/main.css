@@ -1,6 +1,7 @@
 ﻿html, body {
     font: 16px/20px 'Stolzl-Medium', sans-serif;
     min-width: 320px;
+    overflow-x: hidden;
 }
 button:focus {
   outline: none !important
@@ -193,6 +194,7 @@ hr:hover:before {
     color:white;
     text-decoration:none;
     background: rgba(255,255,255,0);
+    z-index: 4;
 }
 
 .clientbtn:hover:before {
@@ -219,10 +221,10 @@ hr:hover:before {
         background-color:transparent;
         margin-left:100px;
         width:200px;
-        padding-left:55px;
+        padding-left: 40px;
         border-radius:20px;
         left: 130px;
-        bottom: 78px;
+        bottom: 77px;
     }
     .clientbtn1:before {
         content: "";
@@ -257,20 +259,23 @@ hr:hover:before {
     }
     .icodisk{
       width: 35px;
-    }
-    .icodiskcon{
-      position: relative;
-      top: 52px;
-      left: 7px;
+      position: absolute;
+      right: 150px;
+      bottom: 10px;
     }
     .icotorrent{
-      width: 35px;
+      width: 25px;
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      right:0;
     }
     .icotorrentcon{
       position: relative;
       float: right;
       top: 19px;
       right: 330px;
+      z-index: 5;
     }
     .client .box{
       overflow: hidden;
@@ -379,220 +384,72 @@ hr:hover:before {
 .list-group-item{
   background-color: #ecf0f1;
 }
-@media (min-width: 576px){
-  .shadow{
-    left: 70px;
-    width: 80%;
-  }
-  .faq{
-    margin-left: 30px;
-    margin-top: 0;
-  }
-  .nav{
-    margin-right: 25px;
-  }
-  .client{
-    margin-top:0;
-    margin-left: 30px;
-  }
-  .icotorrentcon{
-    right: 200px;
-  }
-  .modpack{
-    margin-left: 30px;
-    margin-top:0px;
-  }
-  .server{
-    margin-left:30px;
-  }
-  .crmp{
-    margin-top:0;
-    margin-left: 30px;
-  }
- }
-
- @media (min-width: 768px){
-   .shadow{
-     left: 150px;
-     width: 60%;
-   }
-   .faq{
-     margin-left: 0;
-     margin-top: 0;
-   }
-   .nav{
-     margin-right: 50px;
-   }
-   .client{
-     margin-top:0;
-     margin-left: 30px;
-   }
-   .icotorrentcon{
-     right: 620px;
-   }
-   .modpack{
-     margin-left: 30px;
-     margin-top:0px;
-   }
-   .server{
-     margin-left:30px;
-   }
-   .crmp{
-     margin-top:0;
-     margin-left: 30px;
-   }
-   .jumbotron{
-     margin-left: 0;
-   }
- }
-@media (min-width:1200px){
-  .shadow{
-      position: fixed;
-      top: 0;
-      left: 400px;
-      z-index: 9999;
-      width: 35%;
-      height: 50px;
-      background-color: #ecf0f1;
-  }
-  .nav{
-    margin-right: 10px;
-  }
-  .jumbotron {
-      margin-top: 100px;
-      background-color:transparent;
-      margin-left:50px;
-  }
-  .btn-group-lg > .btn, .btn-lg {
-      padding: .5rem 6rem;
-      margin-left: 80px;
-      margin-top: 20px;
-  }
-  .btn-lg {
-      text-decoration: none;
-      outline: none;
-      display: inline-block;
-      line-height: 45px;
-      border-radius: 45px;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 3px;
-      color: #524f4e;
-      background: #ecf0f1;
-      box-shadow: 0 8px 15px rgba(0,0,0,.1);
-      transition: .3s;
-      border-color: transparent;
-  }
-
-  .pometka{
-      position:relative;
-      width:1px;
-      height:1px;
-      background-color:black;
-      border:0px;
-      top:55px;
-  }
-  .faq{
-      margin-left:300px;
-      margin-top:100px;
-  }
-  .client {
-      margin: 70px 0 100px 500px;
-      background-color: transparent;
-
-      z-index: 2;
-  }
-  .crmp {
-      margin: 0 20px 100px 0;
-  }
-  .modpack {
-      margin: 0 0 100px 500px;
-  }
-
-  .clientbtn {
-      text-decoration: none;
-      outline: none;
-      color: black;
-      display: inline-block;
-      position: relative;
-      padding: 15px 30px;
-      border: 1px solid;
-      border-color:transparent;
-      border-image-slice: 1;
-      margin: 10px 20px;
-      font-size:1.6rem;
-      text-transform: uppercase;
-      overflow: hidden;
-      letter-spacing: 2px;
-      transition: .8s cubic-bezier(.165,.84,.44,1);
-      background-color:transparent;
-      margin-left:100px;
-      width:200px;
-      padding-left:55px;
-      border-radius:20px;
-      right: 100px;
-  }
-  .clientbtn1 {
-          text-decoration: none;
-          outline: none;
-          color: black;
-          display: inline-block;
-          position: relative;
-          padding: 15px 30px;
-          border: 1px solid;
-          border-color:transparent;
-          border-image-slice: 1;
-          margin: 10px 20px;
-          font-size:1.6rem;
-          text-transform: uppercase;
-          overflow: hidden;
-          letter-spacing: 2px;
-          transition: .8s cubic-bezier(.165,.84,.44,1);
-          background-color:transparent;
-          margin-left:100px;
-          width:200px;
-          padding-left:55px;
-          border-radius:20px;
-          left: 130px;
-          bottom: 78px;
-      }
-      .icodisk{
-        width: 35px;
-      }
-      .icodiskcon{
-        position: relative;
-        top: 52px;
-        left: 7px;
-      }
-      .icotorrent{
-        width: 35px;
-      }
-      .icotorrentcon{
-        position: relative;
-        float: right;
-        top: 19px;
-        right: 330px;
-      }
-      .client .box{
-        overflow: hidden;
-        transition: 0.5s;
-        z-index: 2;
-        box-sizing: border-box;
-      }
-  .crmpbtn{
-    text-decoration: none;
-    color: #000;
-    background: none;
-    border: 2px solid #E91E63;
-    font-family: "montserrat", sans-serif;
-    text-transform: uppercase;
-    padding: 12px 50px;
-    min-width: 200px;
-    margin:100px;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    position: relative;
-  }
+.imgRightTorrent{
+  display: block;
+  position: absolute;
+  top:805px;
+  left: 0;
+  transform: translateX(10px);
+  visibility: hidden;
+}
+.torrent{
+  width: 35%;
+  box-shadow: 1px 5px 10px #2c3e50;
+  transition: .5s;
+  opacity: 0;
+}
+.yadisk{
+  width: 35%;
+  box-shadow: 0px 5px 15px #34495e;
+  transition: .5s;
+  opacity: 0;
+}
+.imgRightYaDisk{
+  display: block;
+  position: absolute;
+  top:805px;
+  left: 0;
+  transform: translateX(10px);
+  visibility: hidden;
+}
+ .diskHover:hover .yadisk{
+  visibility: visible;
+  transition: .5s;
+  opacity: 1;
+  transform: translateX(40px);
+}
+.diskHover:hover .bg{
+  visibility: visible;
+  opacity:1;
+  transition: 1s;
+}
+.diskHover:hover .icodisk{
+    transform: rotateY(360deg);
+  transition: .5s;
+}
+.torrentHover:hover .torrent{
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+  transform: translateX(40px);
+}
+.torrentHover:hover .icotorrent{
+  transform: rotateZ(360deg);
+  transition: .5s;
+}
+.torrentHover:hover .bg1{
+    visibility: visible;
+  opacity:1;
+  transition: 1s;
+}
+.torrentHover{
+  width: 0%;
+}
+.clientbtn:hover{
+  transform: translateX(60px);
+}
+.diskHover{
+  width: 0%;
 }
 .context-dark, .bg-gray-dark, .bg-primary {
   color: rgba(255, 255, 255, 0.8);
@@ -619,7 +476,7 @@ hr:hover:before {
 }
 footer{
   margin-top: 10px;
-  margin-left:40px;
+  margin-left:26px;
   height: 50px;
   width: 1059px;
   border-radius: 20px;
@@ -632,4 +489,27 @@ footer{
   padding-bottom: 22px;
   height:43px;
 }
-
+.bg{
+  background: #3a92f6;
+  position: absolute;
+  width: 100%;
+  height: 350%;
+  left: 0;
+  top:0px;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.bg1{
+    background: #71BA51;
+  position: absolute;
+  width: 100%;
+  height: 350%;
+  left: 0;
+  top:0px;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}

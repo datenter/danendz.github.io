@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i">
     <link rel="stylesheet" href="css/sal.css">
     <link rel="icon" href="./ico/M.png" type="image/png">
-    <title>Matreshka RP1</title>
+    <title>Matreshka RP</title>
 </head>
 <body>
     <div class="container">
@@ -58,38 +58,37 @@
             data-sal-easing="ease-out-bounce"
             >Та самая игра про которую мы говорили выше</p>
             <hr class="my-4">
-            <!--Иконки-->
-            <div class="icodiskcon">
-              <img src="ico/yandex-disk.png" alt="yandex disk" class="img-fluid icodisk"
-            data-sal-duration="1200"
-            data-sal="zoom-in"
-            data-sal-delay="300"
-            data-sal-easing="ease-out-bounce"
-              >
-            </div>
-            <div class="icotorrentcon">
-              <img src="ico/utorrent.png" alt="Torrent" class="img-fluid icotorrent"
-              data-sal-duration="1200"
-              data-sal="zoom-in"
-              data-sal-delay="300"
-              data-sal-easing="ease-out-bounce"
-              >
-            </div>
             <!--Ссылки на скачивание игры-->
+            <div class="diskHover">
             <a class="clientbtn box box1" target="_blank" href="https://yadi.sk/d/JYm485WW3GgDR3" role="button" title="Скачать игру через Яндекс диск"
             data-sal-duration="1200"
             data-sal="slide-up"
             data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <img src="ico/yandex-disk.png" alt="yandex disk" class="img-fluid icodisk"
+            data-sal-duration="1200"
+            data-sal="zoom-in"
+            data-sal-delay="300"
             data-sal-easing="ease-out-bounce"
-            >Я.Диск</a>
-            <div class="bg"></div>
+              >Я.Диск</a>
+            <div class="imgRightYaDisk">
+                    <img src="./img/yaDisk.jpg" alt="YandexDisk" class="yadisk">
+                </div>
+                <div class="bg"></div>
+            </div>
+            <div class="torrentHover">
             <a class="clientbtn1 box box2" target="_blank" href="https://cr-mp.ru/download/gtacriminalrussia2010_torrent.torrent" role="button" title="Скачать игру через Яндекс диск"
             data-sal-duration="1200"
             data-sal="slide-down"
             data-sal-delay="300"
             data-sal-easing="ease-out-bounce"
-            >Торрент</a>
-            <div class="bg1"></div>
+            >Торрент<img src="ico/utorrent.png" alt="Torrent" class="img-fluid icotorrent" data-sal-duration="1200" data-sal="zoom-in"
+                data-sal-delay="300" data-sal-easing="ease-out-bounce"></a>
+                            <div class="imgRightTorrent">
+                                <img src="./img/torrentImg.jpg" alt="Torrent" class="torrent">
+                            </div>
+                      <div class="bg1"></div>
+                </div>
         </div>
         <!--Раздел Мультиплеера-->
         <div class="crmp">
@@ -122,13 +121,13 @@
             data-sal-delay="300"
             data-sal-easing="ease-out-bounce"
             >3.Модпак</h1>
-            <p class="lead"       
+            <p class="lead"
             data-sal-duration="1200"
             data-sal="slide-left"
             data-sal-delay="300"
             data-sal-easing="ease-out-bounce"
             >Для большего наслаждения игрой советуем установить наш модпак</p>
-            <p class="lead"           
+            <p class="lead"
             data-sal-duration="1200"
             data-sal="slide-left"
             data-sal-delay="300"
